@@ -1,15 +1,172 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+
+
+body{
+
+  margin:0;
+
+}
+
+div{
+  background-color: #333230;
+
+}
+
+p {
+    font-family: "Verdana", Helvetica, sans-serif;
+    font-size: 1.2em;
+    text-indent: 1em;
+    margin: 1em 10em 1em 10em;
+  }
+
+h1 {
+
+    font-family: "Verdana", Helvetica, sans-serif;
+    font-size: .75em;
+    letter-spacing: .1em;
+    text-align: left
+    padding: 5px;
+      }
+
+h3 {
+  font-family: "Verdana", sans-serif;
+  font-size: 1em;
+  text-align:left;
+  color:white;
+}
+
+ul{
+  font-family: "Verdana", sans-serif;
+  margin: 1em 10em 1em 10em;
+
+}
+
+form{
+    font-family: "Verdana", sans-serif;
+    margin: 1em 10em 1em 10em;
+}
+
+  h3.bigger{
+    font-size: 2.5em;
+  }
+
+  p.important{
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+
+  a:link {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-decoration: none;
+  }
+
+  .underline{
+    border-bottom: 1px solid black;
+    padding-bottom: .5em;
+  }
+
+  .readable{
+    line-height: 1.5em;
+    text-align: justify;
+  }
+
+  .typewriter{
+    font-family: "Courier New", courier, monospace;
+    font-size: 1em;
+  }
+
+  .emphasized{
+    font-style:italic;
+  }
+
+  .contrast{
+    color: white;
+  }
+
+  .standout{
+    color: #cc0000;
+  }
+
+  .btnHelp{
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+  }
+
+  .faceColor{
+    color: #fff;
+    background-color: #428bca;
+    border-color: #357ebd;
+  }
+
+  .googColor{
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a
+  }
+
+  .tweet{
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+  }
+
+  .genButton{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+
+  .button {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #69B1C9;
+    border: none;
+    color: #f6ddb7;
+    text-align: center;;
+    font-size: 20px;
+    padding: 5px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .button:hover span {
+    padding-right: 25px;
+  }
+
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
